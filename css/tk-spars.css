@@ -1,0 +1,23 @@
+body {
+	font-size: 18px;
+    line-height: 1.8;
+}
+.container-fluid {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.first-section {
+	padding-top: 70px;
+}
+.logo-img {
+	border: 0px solid; 
+	height: 50px;
+}
+.bg-1 {
+	background-color: #ffffff;
+    color: #333333;
+}
+.bg-2 {
+	background-color: #333333;
+    color: #ffffff;
+}
