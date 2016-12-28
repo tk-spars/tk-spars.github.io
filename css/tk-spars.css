@@ -1,6 +1,7 @@
 body {
 	font-size: 18px;
     line-height: 1.8;
+    min-width: 680px;
 }
 h1 {
 	font-size: 48px;
@@ -8,6 +9,10 @@ h1 {
 .container-fluid {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.navbar-cont {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .first-section {
 	padding-top: 80px;
@@ -23,4 +28,49 @@ h1 {
 .bg-2 {
 	background-color: #444444;
     color: #ffffff;
+}
+.photogallery {
+	display: inline;
+	margin: auto;
+}
+
+@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
+.lang-link {
+	text-decoration: underline;
 }
