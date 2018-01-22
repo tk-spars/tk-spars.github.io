@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ts-spars.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -15,7 +16,7 @@
 	
 	<script>
 		$(document).on('click','.navbar-collapse.in',function(e) {
-			if( $(e.target).is('a') ) {
+			if ( ($(e.target).is('a')) || ($(e.target).is('span')) ) {
 				$(this).collapse('hide');
 			}
 		});
@@ -33,10 +34,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
 	</button>
+	<img class="img-responsive logo-img" alt="SPARS logo" src="img/Logo.PNG">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-left">
-		<li><a href="#home">Tennis School</a></li>  
+		<li><a href="#home"><span class="glyphicon glyphicon-home"></span></a></li>
+		<li><a href="#school">Tennis School</a></li>   
         <li><a href="#staff">Coaching Staff</a></li>
         <li><a href="#gallery">Photo Gallery</a></li>
         <li><a href="#contact">Contact Us</a></li>
@@ -50,7 +53,21 @@
   </div>
 </nav>
 
-<div class="container-fluid bg-1 first-section" id="home">
+<div class="container-fluid text-center bg-1 home-container" id="home">
+	
+	<div style="margin: auto auto">
+	
+		<img src="img/Logo.PNG" alt="SPARS logo" class="img-responsive" style="width: 529px; display: inline;">
+		<br><br>
+		<a href="#school">
+			<span class="glyphicon glyphicon-chevron-down"></span>
+		</a>
+		
+	</div>
+	
+</div>
+
+<div class="container-fluid bg-2" id="school">
 	
 	<h1 align="center">SPARS Tennis School</h1>
 	
@@ -94,7 +111,7 @@
 	
 </div>
 
-<div class="container-fluid bg-2" id="staff">
+<div class="container-fluid bg-1" id="staff">
 	<h1 align="center">Coaching Staff</h1>
 	
 	<br>
@@ -116,7 +133,6 @@
 	<div class="row">
 		<div class="col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-5">
 			<b>Andrejs Gri&#353;&#257;ns</b><br>
-			Club Coach<br>
 			Group and individual lessons<br>
 			Mobile: 29516421
 		</div>
@@ -131,7 +147,7 @@
 	
 </div>
 
-<div class="container-fluid bg-1" id="gallery">
+<div class="container-fluid bg-2" id="gallery">
 	
 	<h1 align="center">Photo Gallery</h1>
 	
@@ -148,7 +164,7 @@
 	
 </div>
 
-<div class="container-fluid bg-2" id="contact">
+<div class="container-fluid bg-1" id="contact">
 	
 	<h1 align="center">Contact Us</h1><br>
 	
@@ -158,7 +174,8 @@
 				<h2>Contact Info</h2>
 				Head tennis coach: Vadim Moroz<br>
 				E-mail: tennis.spars@gmail.com<br>
-				Phone: 29558157 </p>
+				Phone: 29558157 <br>
+				<a target="_blank" href="https://www.facebook.com/TenisaSkolaSPARS/"><i class="fa fa-facebook-official"></i> Facebook page</a>
 				<h2>Address</h2>
 				Tenisa Klubs ENRI, Kalnciema iela 207, Zemgales priek&scaron;pilsēta, R&#299;gas rajons, LV-1046.
 				<h2>Public Transport<br></h2>
@@ -176,8 +193,8 @@
 	
 </div>
 
-<footer class="container-fluid bg-1 text-center">
-	<p><small>TS SPARS, Copyright &copy; 2017</small></p> 
+<footer class="container-fluid bg-2 text-center">
+	<p><small>TS SPARS, Copyright &copy; 2018</small></p> 
 </footer>
 
 </body>

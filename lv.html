@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ts-spars.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -14,7 +15,7 @@
 	<script src="js/smooth_scroll.js"></script>
 	<script>
 		$(document).on('click','.navbar-collapse.in',function(e) {
-			if( $(e.target).is('a') ) {
+			if ( ($(e.target).is('a')) || ($(e.target).is('span')) ) {
 				$(this).collapse('hide');
 			}
 		});
@@ -32,10 +33,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
 	</button>
+	<img class="img-responsive logo-img" alt="SPARS logo" src="img/Logo.PNG">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-left">
-		<li><a href="#home">Tenisa Skola</a></li>  
+		<li><a href="#home"><span class="glyphicon glyphicon-home"></span></a></li>
+		<li><a href="#school">Tenisa Skola</a></li>  
         <li><a href="#staff">Treneri</a></li>
         <li><a href="#gallery">Foto Galerija</a></li>
         <li><a href="#contact">Kontakti</a></li>
@@ -49,7 +52,21 @@
   </div>
 </nav>
 
-<div class="container-fluid bg-1 first-section" id="home">
+<div class="container-fluid text-center bg-1 home-container" id="home">
+	
+	<div style="margin: auto auto">
+	
+		<img src="img/Logo.PNG" alt="SPARS logo" class="img-responsive" style="width: 529px; display: inline;">
+		<br><br>
+		<a href="#school">
+			<span class="glyphicon glyphicon-chevron-down"></span>
+		</a>
+		
+	</div>
+	
+</div>
+
+<div class="container-fluid bg-2" id="school">
 	
 	
 	<h1 align="center">Tenisa Skola SPARS</h1>
@@ -73,7 +90,7 @@
 			mums, skolas treneriem, baud&#299;t &#353;o bezgala interesantu sp&#275;li.
 			</p>
 			<p>Priek&#353; s&#299;k&#257;kas inform&#257;cijas par m&#363;su tenisa skolu, 
-			zvaniet kluba galvenajam trenerim <a href="#staff">Vadimam Morozam</a>.
+			zvaniet skolas galvenajam trenerim <a href="#staff">Vadimam Morozam</a>.
 			</p>
 			
 		</div>
@@ -99,14 +116,14 @@
 	
 </div>
 
-<div class="container-fluid bg-2" id="staff">
+<div class="container-fluid bg-1" id="staff">
 	<h1 align="center">Treneri</h1>
 	
 	<br>
 	<div class="row">
 		<div class="col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-5">
 			<b>Vadims Morozs</b><br>
-			Kluba galvenais treneris<br>
+			Skolas galvenais treneris<br>
 			Grupu un individu&#257;l&#257;s nodarb&#299;bas<br>
 			Telefons: 29558157
 		</div>
@@ -121,7 +138,7 @@
 	<div class="row">
 		<div class="col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-5">
 			<b>Andrejs Gri&#353;&#257;ns</b><br>
-			Kluba treneris<br>
+			Skolas treneris<br>
 			Grupu un individu&#257;l&#257;s nodarb&#299;bas<br>
 			Telefons: 29516421
 		</div>
@@ -136,7 +153,7 @@
 	
 </div>
 
-<div class="container-fluid bg-1" id="gallery">
+<div class="container-fluid bg-2" id="gallery">
 	
 	<h1 align="center">Foto Galerija</h1>
 	
@@ -153,7 +170,7 @@
 	
 </div>
 
-<div class="container-fluid bg-2" id="contact">
+<div class="container-fluid bg-1" id="contact">
 	
 	<h1 align="center">Kontakti</h1><br>
 	
@@ -163,7 +180,8 @@
 				<h2>Kontaktinform&#257;cija</h2>
 				Skolas galvenais treneris: Vadims Morozs<br>
 				E-mail: tennis.spars@gmail.com<br>
-				Telefons: 29558157</p>
+				Telefons: 29558157<br>
+				<a target="_blank" href="https://www.facebook.com/TenisaSkolaSPARS/"><i class="fa fa-facebook-official"></i> Facebook lapa</a>
 				<h2>Adrese</h2>
 				Tenisa Klubs ENRI, Kalnciema iela 207, Zemgales priek&scaron;pilsēta, R&#299;gas rajons, LV-1046.
 				<h2>Publiskais Transports</h2>
@@ -180,8 +198,8 @@
 	
 </div>
 
-<footer class="container-fluid bg-1 text-center">
-	<p><small>TS SPARS, Copyright &copy; 2017</small></p> 
+<footer class="container-fluid bg-2 text-center">
+	<p><small>TS SPARS, Copyright &copy; 2018</small></p> 
 </footer>
 
 </body>

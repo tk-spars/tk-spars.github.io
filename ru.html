@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ts-spars.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -14,7 +15,7 @@
 	<script src="js/smooth_scroll.js"></script>
 	<script>
 		$(document).on('click','.navbar-collapse.in',function(e) {
-			if( $(e.target).is('a') ) {
+			if ( ($(e.target).is('a')) || ($(e.target).is('span')) ) {
 				$(this).collapse('hide');
 			}
 		});
@@ -32,10 +33,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
 	</button>
+	<img class="img-responsive logo-img" alt="SPARS logo" src="img/Logo.PNG">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-left">  
-        <li><a href="#home">&#1064;&#1082;&#1086;&#1083;&#1072; &#1058;&#1077;&#1085;&#1085;&#1080;&#1089;&#1072;</a></li>
+		<li><a href="#home"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="#school">&#1064;&#1082;&#1086;&#1083;&#1072; &#1058;&#1077;&#1085;&#1085;&#1080;&#1089;&#1072;</a></li>
         <li><a href="#staff">&#1058;&#1088;&#1077;&#1085;&#1077;&#1088;&#1089;&#1082;&#1080;&#1081; 
         &#1057;&#1086;&#1089;&#1090;&#1072;&#1074;</a></li>
         <li><a href="#gallery">&#1060;&#1086;&#1090;&#1086;&#1075;&#1072;&#1083;&#1077;&#1088;&#1077;&#1103;</a></li>
@@ -50,8 +53,21 @@
   </div>
 </nav>
 
+<div class="container-fluid text-center bg-1 home-container" id="home">
+	
+	<div style="margin: auto auto">
+	
+		<img src="img/Logo.PNG" alt="SPARS logo" class="img-responsive" style="width: 529px; display: inline;">
+		<br><br>
+		<a href="#school">
+			<span class="glyphicon glyphicon-chevron-down"></span>
+		</a>
+		
+	</div>
+	
+</div>
 
-<div class="container-fluid bg-1 first-section" id="home">
+<div class="container-fluid bg-2" id="school">
 	
 	<h1 align="center">&#1064;&#1082;&#1086;&#1083;&#1072; &#1058;&#1077;&#1085;&#1085;&#1080;&#1089;&#1072; SPARS</h1>
 	
@@ -94,7 +110,7 @@
 	
 </div>
 
-<div class="container-fluid bg-2" id="staff">
+<div class="container-fluid bg-1" id="staff">
 	<h1 align="center">&#1058;&#1088;&#1077;&#1085;&#1077;&#1088;&#1089;&#1082;&#1080;&#1081; 
         &#1057;&#1086;&#1089;&#1090;&#1072;&#1074;</h1>
 	
@@ -102,7 +118,7 @@
 	<div class="row">
 		<div class="col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-5">
 			<b>&#1042;&#1072;&#1076;&#1080;&#1084; &#1052;&#1086;&#1088;&#1086;&#1079;</b><br>
-			&#1043;&#1083;&#1072;&#1074;&#1085;&#1099;&#1081; &#1090;&#1088;&#1077;&#1085;&#1077;&#1088; &#1082;&#1083;&#1091;&#1073;&#1072;<br>
+			&#1043;&#1083;&#1072;&#1074;&#1085;&#1099;&#1081; &#1090;&#1088;&#1077;&#1085;&#1077;&#1088; школы<br>
 			&#1043;&#1088;&#1091;&#1087;&#1087;&#1086;&#1074;&#1099;&#1077; &#1080; &#1080;&#1085;&#1076;&#1080;&#1074;&#1080;&#1076;&#1091;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1079;&#1072;&#1085;&#1103;&#1090;&#1080;&#1103;<br>
 			&#1058;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;: 29558157
 		</div>
@@ -117,7 +133,6 @@
 	<div class="row">
 		<div class="col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-5">
 			<b>&#1040;&#1085;&#1076;&#1088;&#1077;&#1081; &#1043;&#1088;&#1080;&#1096;&#1072;&#1085;&#1089;</b><br>
-			&#1058;&#1088;&#1077;&#1085;&#1077;&#1088; &#1082;&#1083;&#1091;&#1073;&#1072;<br>
 			&#1043;&#1088;&#1091;&#1087;&#1087;&#1086;&#1074;&#1099;&#1077; &#1080; &#1080;&#1085;&#1076;&#1080;&#1074;&#1080;&#1076;&#1091;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1079;&#1072;&#1085;&#1103;&#1090;&#1080;&#1103;<br>
 			&#1058;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;: 29516421
 		</div>
@@ -132,7 +147,7 @@
 	
 </div>
 
-<div class="container-fluid bg-1" id="gallery">
+<div class="container-fluid bg-2" id="gallery">
 	
 	<h1 align="center">&#1060;&#1086;&#1090;&#1086;&#1075;&#1072;&#1083;&#1077;&#1088;&#1077;&#1103;</h1>
 	
@@ -149,7 +164,7 @@
 	
 </div>
 
-<div class="container-fluid bg-2" id="contact">
+<div class="container-fluid bg-1" id="contact">
 	
 	<h1 align="center">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1099;</h1><br>
 	
@@ -159,7 +174,8 @@
 				<h2>&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1085;&#1072;&#1103; &#1048;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1103;</h2>
 				&#1043;&#1083;&#1072;&#1074;&#1085;&#1099;&#1081; &#1090;&#1088;&#1077;&#1085;&#1077;&#1088; &#1082;&#1083;&#1091;&#1073;&#1072; - &#1042;&#1072;&#1076;&#1080;&#1084; &#1052;&#1086;&#1088;&#1086;&#1079;<br>
 				E-mail: tennis.spars@gmail.com<br>
-				&#1058;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;: 29558157
+				&#1058;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;: 29558157 <br>
+				<a target="_blank" href="https://www.facebook.com/TenisaSkolaSPARS/"><i class="fa fa-facebook-official"></i> Страница Facebook</a>
 				<h2>&#1040;&#1076;&#1088;&#1077;&#1089;</h2>
 				Tenisa Klubs ENRI, Kalnciema iela 207, Zemgales priek&scaron;pilsēta, R&#299;gas rajons, LV-1046.
 				<h2>&#1054;&#1073;&#1097;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1099;&#1081; &#1058;&#1088;&#1072;&#1085;&#1089;&#1087;&#1086;&#1088;&#1090;</h2>
@@ -175,8 +191,8 @@
 	
 </div>
 
-<footer class="container-fluid bg-1 text-center">
-	<p><small>TS SPARS, Copyright &copy; 2017</small></p> 
+<footer class="container-fluid bg-2 text-center">
+	<p><small>TS SPARS, Copyright &copy; 2018</small></p> 
 </footer>
 
 </body>

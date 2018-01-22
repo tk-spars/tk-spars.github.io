@@ -1,3 +1,14 @@
+a {
+	text-decoration: none;
+}
+.navbar-nav  li a:hover {
+  color: #000000 !important;
+}
+
+.navbar-nav li.active a {
+	color: #000000 !important;
+	background-color: #ffffff !important;
+}
 body {
 	font-size: 18px;
     line-height: 1.8;
@@ -21,9 +32,23 @@ h1 {
 .first-section {
 	padding-top: 80px;
 }
+.home-container {
+	min-height: 100vh;
+	padding-top: 90px;
+	font-size: 24px;
+	line-height: 1.4;
+	display: flex;
+}
+.home-container a {
+	font-size: 48px;
+	color: #444444;
+ }
+ .home-container a:hover {
+	color: #000000;
+ }
 .logo-img {
 	border: 0px solid; 
-	height: 50px;
+	height: 45px;
 }
 .bg-1 {
 	background-color: #ffffff;
